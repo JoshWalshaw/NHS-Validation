@@ -6,7 +6,7 @@ export class NHSNumber {
    *
    * @returns string - as we want to ensure that the number can begin with 0, and avoids any weird Javascript math issues.
    */
-  private static GenerateMod11(input: string): string {
+  private static generateMod11(input: string): string {
     // Remove anything that isn't numeric.
     input = input.replaceAll(/\D/gi, '');
     // The checksum is calculated by multiplying each of the first nine digits by 11 minus its position.
@@ -45,16 +45,16 @@ export class NHSNumber {
     return input + String(checksum);
   }
 
-  public static Validate(input: string): boolean {
+  public static validate(input: string): boolean {
     // Remove anything that isn't numeric
     input = input.replaceAll(/\D/gi, '');
 
     if (input.length !== 10) return false;
 
-    return this.GenerateMod11(input) === input;
+    return this.generateMod11(input) === input;
   }
 
-  public static Generate(): string {
+  public static generate(): string {
     let i = 0;
     let found = false;
     let attempt = '';
@@ -64,9 +64,8 @@ export class NHSNumber {
       attempt = String(Math.random()).substring(2, 12);
 
       try {
-        if (this.Validate(attempt)) {
+        if (this.validate(attempt)) {
           found = true;
-          console.log(`Successful attempt found after ${i} iterations: `, attempt);
           break;
         }
       } catch (error) {
