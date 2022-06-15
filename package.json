@@ -1,0 +1,64 @@
+{
+  "name": "nhs-validation",
+  "version": "0.0.2",
+  "description": "Allows the validation and generation of various NHS and medical elements like NHS Numbers & Clinical Codes.",
+  "keywords": [
+    "nhs",
+    "nhs numbers",
+    "nhs validation",
+    "nhs validate"
+  ],
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "author": "Josh Walshaw, sethiroth66",
+  "maintainers": [
+    "Josh Walshaw <josh@joshwalshaw.com> (https://github.com/joshwalshaw)",
+    "sethiroth66 <sethiroth66@gmail.com> (https://github.com/sethiroth66/)"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JoshWalshaw/NHS-Validation.git"
+  },
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "format": "prettier --write \"src/**/*.ts\"",
+    "lint": "eslint \"{src,test}/**/*.ts\" --fix",
+    "test": "jest",
+    "test:dev": "jest --watch",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm run lint",
+    "preversion": "npm run lint",
+    "version": "npm run format && git add -A .",
+    "postversion": "git push && git push --tags"
+  },
+  "devDependencies": {
+    "@types/jest": "^28.1.1",
+    "@typescript-eslint/eslint-plugin": "^5.0.0",
+    "@typescript-eslint/parser": "^5.0.0",
+    "eslint": "^8.0.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "jest": "^28.1.1",
+    "prettier": "^2.7.0",
+    "ts-jest": "^28.0.5",
+    "tsconfig-paths": "^3.10.1",
+    "typescript": "^4.7.3"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "js",
+      "json",
+      "ts"
+    ],
+    "rootDir": "src",
+    "testRegex": ".*\\.test\\.ts$",
+    "transform": {
+      "^.+\\.(t|j)s$": "ts-jest"
+    },
+    "collectCoverageFrom": [
+      "**/*.(t|j)s"
+    ],
+    "testEnvironment": "node"
+  }
+}
