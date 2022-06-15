@@ -1,4 +1,6 @@
-# NHS-Numbers
+# NHS Validation
+
+[![Testing](https://github.com/JoshWalshaw/NHS-Validation/actions/workflows/testing.yaml/badge.svg?branch=main)](https://github.com/JoshWalshaw/NHS-Validation/actions/workflows/testing.yaml)
 
 Please note that this is in very early stages.
 
