@@ -1,5 +1,9 @@
 # NHS Validation
-[![Testing](https://github.com/JoshWalshaw/NHS-Validation/actions/workflows/testing.yaml/badge.svg?branch=main)](https://github.com/JoshWalshaw/NHS-Validation/actions/workflows/testing.yaml)
+
+[![npm_version](https://img.shields.io/npm/v/nhs-validation.svg?style=flat-square)](https://www.npmjs.com/package/nhs-validation)
+[![vulnerabilities](https://snyk.io/test/npm/nhs-validation/badge.svg)](https://snyk.io/test/npm/nhs-validation)
+[![testing](https://github.com/JoshWalshaw/NHS-Validation/actions/workflows/testing.yaml/badge.svg?branch=main)](https://github.com/JoshWalshaw/NHS-Validation/actions/workflows/testing.yaml)
+[![install size](https://packagephobia.com/badge?p=nhs-validation)](https://packagephobia.com/result?p=nhs-validation)
 
 A package containing several validation tools useful for working with NHS or UK medical data.
 
