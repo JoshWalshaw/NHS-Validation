@@ -10,6 +10,10 @@
     "Josh Walshaw <josh@joshwalshaw.com> (https://github.com/joshwalshaw)",
     "sethiroth66 <sethiroth66@gmail.com> (https://github.com/sethiroth66/)"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JoshWalshaw/NHS-Validation.git"
+  },
   "license": "MIT",
   "scripts": {
     "build": "tsc",
