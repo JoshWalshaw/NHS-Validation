@@ -1,7 +1,8 @@
 {
-  "name": "nhs-number",
+  "name": "nhs-validation",
   "version": "0.0.1",
-  "description": "Allows the validation and generation of UK NHS Numbers.",
+  "description": "Allows the validation and generation of various NHS and medical elements like NHS Numbers & Clinical Codes.",
+  "keywords": ["nhs", "nhs numbers", "nhs validation", "nhs validate"],
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "author": "Josh Walshaw, sethiroth66",
@@ -16,7 +17,7 @@
     "lint": "eslint \"{src,test}/**/*.ts\" --fix",
     "test": "echo \"Error: no test specified\" && exit 1",
     "prepare" : "npm run build",
-    "prepublishOnly" : "npm test && npm run lint",
+    "prepublishOnly" : "npm run lint",
     "preversion" : "npm run lint",
     "version" : "npm run format && git add -A src",
     "postversion" : "git push && git push --tags"
