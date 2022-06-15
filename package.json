@@ -1,0 +1,34 @@
+{
+  "name": "nhs-number",
+  "version": "0.0.1",
+  "description": "Allows the validation and generation of UK NHS Numbers.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "author": "Josh Walshaw, sethiroth66",
+  "maintainers": [
+    "Josh Walshaw <josh@joshwalshaw.com> (https://github.com/joshwalshaw)",
+    "sethiroth66 <sethiroth66@gmail.com> (https://github.com/sethiroth66/)"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "format": "prettier --write \"src/**/*.ts\"",
+    "lint": "eslint \"{src,test}/**/*.ts\" --fix",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare" : "npm run build",
+    "prepublishOnly" : "npm test && npm run lint",
+    "preversion" : "npm run lint",
+    "version" : "npm run format && git add -A src",
+    "postversion" : "git push && git push --tags"
+  },
+  "devDependencies": {
+    "prettier": "^2.7.0",
+    "typescript": "^4.7.3",
+    "@typescript-eslint/eslint-plugin": "^5.0.0",
+    "@typescript-eslint/parser": "^5.0.0",
+    "eslint": "^8.0.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "tsconfig-paths": "^3.10.1"
+  }
+}

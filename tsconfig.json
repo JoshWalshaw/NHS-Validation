@@ -1,0 +1,13 @@
+{
+  "include": ["src"],
+  "compilerOptions": {
+    "incremental": true,
+    "module": "commonjs",
+    "lib": ["dom", "ES2021"],
+    "esModuleInterop": true,
+    "strict": true,
+    "declaration": true,
+    "outDir": "./dist",
+    "forceConsistentCasingInFileNames": true
+  }
+}
