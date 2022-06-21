@@ -1,10 +1,12 @@
 {
   "name": "nhs-validation",
   "version": "1.0.0",
-  "description": "Allows the validation and generation of various NHS and medical elements like NHS Numbers & Clinical Codes.",
+  "description": "Allows the validation and generation of NHS Numbers",
   "keywords": [
     "nhs",
     "nhs numbers",
+    "nhs number",
+    "nhs number validation",
     "nhs validation",
     "nhs validate"
   ],
